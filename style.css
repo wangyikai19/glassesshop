@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+*,*::before,*::after{
+    block-size: border-box;
+}
+body {
+    font-family: "Noto Sans TC", sans-serif;
+}
+.banner{
+	background: #AA0601;
+	
+}
+.header{
+	background: #AA0601;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	max-width:  1296px;
+}
+
+.header ul{
+	display: flex;
+	justify-content: flex-end;
+}
+.headermenu{
+    display: flex;
+	align-items: center;
+}
+.header li a{
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	font-family: regular;
+	width: 80px;
+	height: 30px;
+	text-decoration: none;
+	padding-top: 25px;
+  	padding-bottom: 25px;
+}
+.header img{
+	width: 80px;
+	height: 49px;
+}
+.headericon{
+	width: 80px;
+	height: 48px;
+}
+.text{
+	margin-right: auto;
+	margin-left: auto;
+	max-width:  1296px;
+}
+
+.main h1{
+	display: flex;
+	align-items: center;
+	margin-top: 96px;
+	font-size: 48px;
+	border-left: 8px solid #9F1213;
+	opacity: 1;
+	width: 192px;
+	height: 72px;
+	font-weight: bold;
+}
+.main h2{
+	display: flex;
+	align-items: center;
+	font-style: normal ;
+	margin-top: 32px;
+	font-size: 24px;
+	opacity: 1;
+	width: 192px;
+	height: 36px;
+	font-weight: bold;
+	padding-bottom: 24px;
+}
+.main h3{
+	display: flex;
+	align-items: left;
+	font-style: normal ;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 8px;
+
+}
+.main p{
+	display: flex;
+	align-items: left;
+	font-style: normal ;
+	font-size: 16px;
+	padding-bottom: 32px;
+}
+.lower{
+	background-color: #AA0601;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #AA0601;
+    padding-top: 60px;
+    color: white;
+	margin-right: auto;
+	margin-left: auto;
+	max-width:  1296px;
+	
+}
+.footer list{
+	display: flex;
+	width: auto;
+}
+.list {
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-footer {
+    display: flex;
+}
+
+.menu-footer li {
+    font-size: 16px;
+    display: flex;
+    padding-right: 30px;
+}
+
+.menu-footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 48px;
+    margin-left: 32px;
+}
+
+.contact {
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.contact h2 {
+    font-size: 36px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.phone img {
+    width: 36px;
+    margin-right: 22px;
+}
+.mail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.mail img {
+    width: 36px;
+    margin-right: 22px;
+}
+
+.policy {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: flex-end;
+    padding-bottom: 32px;
+	color: #fff;
+	margin-right: 0px;
+	max-width:  1296px;
+}
+
+.copyright p {
+    font-size: 16px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width:  1296px;
+}
+.policy a {
+	color: #fff;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+	padding-left:48px ;
+}
+
+.bottom{
+	margin-right: auto;
+	margin-left: auto;
+	max-width:  1296px;
+	background-color: #AA0601;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+@media(max-width: 769px){
+	.header{
+		margin-right: 36px;
+		margin-left: 36px;
+		max-width:  696px;
+	}
+	.text{
+		margin-right: 36px;
+		margin-left: 36px;
+		max-width:  696px;
+	}
+	.footer{
+		margin-right: auto;
+		margin-left: auto;
+		max-width:  696px;
+	}
+	.bottom{
+		margin-right: auto;
+		margin-left: auto;
+		max-width:  696px;
+	}
+}
+@media(max-width: 675px){
+	.header li a{
+		font-size: 16px;
+	}
+	.menu-footer li{
+		padding: 5px;
+	}
+	.menu-footer li a{
+		font-size: 16px;
+	}
+	.contact h2{
+		font-size: 16px;
+	}
+	.contact img{
+		width: 16px;
+		height: 16px;
+		margin: 0px;
+	}
+	.footer{
+		max-width: 660px
+	}
+	.bottom{
+		max-width: 660px
+	}
+	.policy a{
+		padding-left: 5px;
+		display: inline;
+	}
+}
+@media(max-width: 500px){
+	.icon img {
+		margin: 5px;
+	}
+	.footericon li a {
+		padding: 0;
+	}
+}
+@media(max-width: 376px){
+	.header{
+		display: block;
+		align-items: center;
+		margin-right: auto;
+		margin-left: auto;
+		max-width:  376px;
+	}
+	.headermenu{
+		flex-wrap: wrap;
+	}
+	.headermenu li{
+
+		width: 50%;
+		text-align: center;
+	}
+	.header li a{
+		display:block;
+		width: 100%;
+		text-align: center;
+		border: 1px solid #FFFFFF;
+	}
+	.menu-footer{
+		display: none;
+	}
+
+	.icon img {
+		width: 16px;
+	}
+	.Bottom{
+		max-width: 376px;
+		
+	}
+	.bottom{
+		flex-wrap: wrap;
+	}
+	.main{
+		margin-right: auto;
+		margin-left: auto;
+		max-width:  376px;
+		padding: 64px;
+		
+	}
+	.footer{
+		max-width:  376px;
+		padding-top: 0px;
+	}
+	.footer img {
+		margin: 4px;
+	}
+	.mail {
+		margin-bottom: 0px;
+
+	}
+	.contact {
+		margin-top: 0px;
+	}
+	.copyright {
+		width: 100%;
+		max-width:  376px;
+	}
+	.copyright p{
+		margin-top: 8px;
+	}
+	.policy a{
+		width: 100%;
+		padding: 0px;
+		text-align: left;
+		margin-top: 8px;
+	}
+	.lower{
+		padding-left: 14px;
+		padding-right: 14px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+}
